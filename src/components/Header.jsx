@@ -1,15 +1,23 @@
 import React from 'react'
 import { styled } from 'styled-components';
 import { AiOutlineMenu } from "react-icons/ai";
+import { useNavigate } from 'react-router-dom';
 function Header() {
+  const navigate = useNavigate()
   return (
     <>
       <HeaderWrap>
-        <HeaderLogo>
+        <HeaderLogo onClick={() => {
+          navigate('/')
+        }}>
           👩‍💻 Heeje
         </HeaderLogo>
+{/* 
+        <HeaderLogo>
+          👩‍💻 Heeje
+        </HeaderLogo> */}
         <div>
-          <AiOutlineMenu size={20}/>
+          <AiOutlineMenu size={20} />
         </div>
       </HeaderWrap>
     </>
@@ -22,7 +30,7 @@ const HeaderWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 20px;
+  padding-inline: 60px;
   box-shadow: rgb(220, 220, 220) 0px 2px 5px;
 `
 

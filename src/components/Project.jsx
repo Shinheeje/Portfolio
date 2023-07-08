@@ -13,8 +13,9 @@ function Project() {
         <ProjectTitleWrap>
           <h2 onClick={() => {
             navigate('/Mogakko')
+            window.scrollTo(0, 0)
           }}>[모각코 ON:]</h2>
-          <ProjectLink>https://mogakko-on.vercel.app/</ProjectLink>
+          <ProjectLink to={'https://mogakko-on.vercel.app/'}>https://mogakko-on.vercel.app/</ProjectLink>
         </ProjectTitleWrap>
         <ProjectDesc>개발자들을 위한 화상채팅 플랫폼</ProjectDesc>
         <ProjectContentBox>
@@ -90,6 +91,7 @@ function Project() {
         <ProjectTitleWrap>
           <h2 onClick={() => {
             navigate('/Clone')
+            window.scrollTo(0, 0)
           }}>Tinder클론 코딩</h2>
         </ProjectTitleWrap>
 
@@ -158,7 +160,6 @@ const Dot = styled.div`
 const DotFlex = styled.div`
   display: flex;
   align-items: center;
-  gap: 7px;
 `
 
 const ThinLine = styled.div`
@@ -182,8 +183,16 @@ const ProjectWrap = styled.div`
     font-family: 'Pretendard';
     font-size: 20px;
     font-weight: 600;
-    text-decoration: underline;
     cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.2s;
+    border-radius: 4px;
+    text-decoration: underline;
+    &:hover {
+      color: white;
+      background-color: rgb(252, 131, 108);
+      text-decoration: none;
+    }
   }
 `
 

@@ -1,14 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from '../style/Layout';
-import Header from '../components/Header'
 import Main from '../page/Main';
 import Mogakko from '../components/Mogakko'
 import Clone from '../components/Clone'
 function Router() {
   return (
     <>
-      <Header />
       <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
