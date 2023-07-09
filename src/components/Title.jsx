@@ -12,7 +12,7 @@ function Title() {
           </IntroduceName>
         </IntroduceWrap>
         <ImageWrap>
-          <Image image={`${process.env.PUBLIC_URL}/image/test.jpg`} />
+          <Image image={`${process.env.PUBLIC_URL}/image/Photo.jpg`} />
           <div>
             <ContactWrap>
               <h1>Contact</h1>
@@ -31,6 +31,10 @@ function Title() {
               <ContactItem>
                 <p>Blog.</p>
                 <ContactLink to={'https://shinheeje.tistory.com/'}>https://shinheeje.tistory.com/</ContactLink>
+              </ContactItem>
+              <ContactItem>
+                <p>Portfolio.</p>
+                <ContactLink to={'https://shinheeje.vercel.app/'}>https://shinheeje.vercel.app/</ContactLink>
               </ContactItem>
             </ContactWrap>
             <SkillWrap>
@@ -102,9 +106,9 @@ const Image = styled.div`
   background-image: ${(props) =>
     `url('${props.image}')`
   };
-  border-radius: 50%;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 `
 
 const ContactWrap = styled.div`
