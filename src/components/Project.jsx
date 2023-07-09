@@ -142,6 +142,81 @@ function Project() {
           </ProjectContentWrap>
         </ProjectContentBox>
 
+        <h1>Experience.</h1>
+
+        <ExperienceTitleWrap>
+          <div>
+            <ExperienceTitle>항해99 14기</ExperienceTitle>
+            <span>진행 기간 : 03.03 ~ 07.07</span>
+          </div>
+          <ProjectContentWrap>
+            <ProjectContentDescWrap>
+              <DotFlex>
+                <Dot /> React, Javascript, 알고리즘
+              </DotFlex>
+
+              <DotFlex>
+                <Dot /> 미니프로젝트, 클론프로젝트, 최종 팀 프로젝트 진행
+              </DotFlex>
+
+              <DotFlex>
+                <Dot /> 여러번의 팀 프로젝트 과정을 통해 백앤드-프론트앤드-디자이너 협업 과정 경험.
+              </DotFlex>
+
+              <DotFlex>
+                <Dot /> 프로젝트 배포후 63건의 유저 피드백 수용 경험
+              </DotFlex>
+            </ProjectContentDescWrap>
+          </ProjectContentWrap>
+        </ExperienceTitleWrap>
+
+        <ExperienceTitleWrap>
+          <FlexBox>
+            <ExperienceTitle>프론트 언어
+              기술 스터디</ExperienceTitle>
+            <span>진행 기간 : 04.14 ~ 07.02</span>
+            <p>🔗 Link</p>
+            <LinkWrap>
+              <ProjectLink to={'https://www.notion.so/6919d4d1829c41e7a97ded46b95b5c29?pvs=4'}>스터디 노션 바로가기</ProjectLink>
+              <ProjectLink to={'https://github.com/hanghae99-14-interview-study/interview-study'}>스터디 깃허브 바로가기</ProjectLink>
+            </LinkWrap>
+          </FlexBox>
+          <ProjectContentWrap>
+            <ProjectContentDescWrap>
+              <DotFlex>
+                <Dot /> <p style={{ fontWeight: '600' }}>진행 동기</p>
+              </DotFlex>
+
+              <DotFlexTwo>
+                <p>혼자서 공부하는 것보단 같이 공부하는게 지속 가능하고 부족한 의지를 같이 동기부여해서 나아갈 수 있다고 생각해서 스터디를 개설하게 되었습니다.</p>
+              </DotFlexTwo>
+
+              <DotFlex>
+                <Dot /> <p style={{ fontWeight: '600' }}>진행 방향</p>
+              </DotFlex>
+
+              <DotFlexTwo>
+                <p>2023.04.14 ~ 2023.05.05 1주일에 1회 진행</p>
+              </DotFlexTwo>
+
+              <DotFlexTwo>
+                <p>프론트 언어 기술에 대해 공부 후 발표</p>
+              </DotFlexTwo>
+
+              <DotFlexTwo>
+                <p>2023.06.04 ~ 2023.07.02 1주일에 1회 진행</p>
+              </DotFlexTwo>
+
+              <DotFlexTwo>
+                <p>공통적인 질문에 대한 답변 준비 후 베스트 답변 선정으로 프로젝트 진행</p>
+              </DotFlexTwo>
+            </ProjectContentDescWrap>
+          </ProjectContentWrap>
+        </ExperienceTitleWrap>
+        <ThinLine />
+
+        <h1>Education.</h1>
+        <EducationContent>2017.03-2021.02 부천대학교 호텔관광경영과</EducationContent>
         <LastSentence>
           <p>Copyright 2023. shinheeje all rights reserved.</p>
         </LastSentence>
@@ -149,7 +224,45 @@ function Project() {
     </>
   )
 }
-const Dot = styled.div`
+
+const EducationContent = styled.p`
+  font-family: 'Pretendard';
+  margin-bottom: 40px;
+`
+
+const LinkWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+`
+
+const FlexBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  
+  span {
+    margin-bottom: 15px;
+    font-family: 'Pretendard';
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-family: 'Pretendard';
+    font-weight: 600;
+  }
+`
+
+const ExperienceTitle = styled.h3`
+    width: 206px;
+    color: rgb(252, 131, 108);
+    font-family: 'Pretendard';
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s;
+    border-radius: 4px;
+`
+
+const Dot = styled.span`
   width: 5px;
   height: 5px;
   background-color: rgb(252, 131, 108);
@@ -160,6 +273,27 @@ const Dot = styled.div`
 const DotFlex = styled.div`
   display: flex;
   align-items: center;
+`
+
+const DotFlexTwo = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  position: relative;
+  p {
+    font-family: 'Pretendard';
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: -10px;
+      width: 5px;
+      height: 5px;
+      background-color: rgb(252, 131, 108);
+      border-radius: 50%;
+    }
+  }
 `
 
 const ThinLine = styled.div`
@@ -201,6 +335,18 @@ const ProjectTitleWrap = styled.div`
   align-items: center;
   gap: 20px;
   margin-bottom: 10px;
+  font-family: 'Pretendard';
+`
+
+const ExperienceTitleWrap = styled.div`
+  display: flex;
+  gap: 5px;
+  margin-bottom: 40px;
+  font-family: 'Pretendard';
+  span {
+    font-family: 'Pretendard';
+    font-size: 12px;
+  }
 `
 
 const ProjectLink = styled(Link)`
@@ -217,6 +363,7 @@ const ProjectDesc = styled.p`
 
 const ProjectContentBox = styled.div`
   margin-bottom: 80px;
+  font-family: 'Pretendard';
 `
 
 const ProjectContentWrap = styled.div`

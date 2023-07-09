@@ -61,7 +61,7 @@ const Line = styled.div`
 
 const TitleWrap = styled.div`
   height: 350px;
-  margin-top: 25px;
+  margin-top: 65px;
 `
 
 const IntroduceWrap = styled.div`

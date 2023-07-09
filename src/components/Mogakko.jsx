@@ -17,7 +17,7 @@ function Mogakko() {
         <h2>🔗 Link</h2>
         <ProjectLink to={`https://mogakko-on.vercel.app/`}>모각코 ON: 서비스 바로가기</ProjectLink>
         <ProjectLink to={`https://github.com/Shinheeje/final_fe`}>프론트엔드 깃허브 바로가기</ProjectLink>
-        <ProjectLink to={`https://github.com/Shinheeje/final_fe`}>Troubleshooting 바로가기</ProjectLink>
+        <ProjectLink to={`https://shinheeje.tistory.com/80`}>Troubleshooting 바로가기</ProjectLink>
 
         <h3>✏️ 프로젝트 설명</h3>
 
@@ -55,7 +55,7 @@ function Mogakko() {
           <ProjectContentTitle>Stomp, Sock.js</ProjectContentTitle>
           <ProjectContentDescWrap>
             <DotFlex>
-              <Dot /> <p>클라이언트와 서버 간의 상호 운용성을 향상시키고, 개발자들이 일관된 방식으로 통신할 수 있도록 도와줄 수 있는 Stomp를 사용</p>
+              <Dot /> <p>클라이언트와 서버 간의 상호 운용성을 향상 및 개발자들이 일관된 방식으로 통신할 수 있도록 도와줄 수 있는 Stomp를 사용</p>
             </DotFlex>
 
             <DotFlex>
@@ -245,6 +245,7 @@ const Line = styled.div`
 
 const MogakkoWrap = styled.div`
   position: relative;
+  margin-top: 65px;
   h2 {
     font-size: 22px;
     font-weight: 600;
@@ -323,7 +324,7 @@ const ProjectLink = styled(Link)`
   margin-top: 5px;
 `
 
-const Dot = styled.div`
+const Dot = styled.span`
   width: 5px;
   height: 5px;
   background-color: rgb(252, 131, 108);

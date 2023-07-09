@@ -16,6 +16,17 @@ function Introduce() {
             </p>
           </IntroduceContent>
 
+          <h3>사람들이 필요로 하는 것이 무엇인지 <b>고민하고 실행하는 개발자</b></h3>
+
+          <IntroduceContent>
+            <div>
+              <p>
+                <Dot></Dot>[모각코 ON:]서비스는 타겟 대상인 개발자의 편의성을 고민하며 코드 에디터까지 이용할 수 있도록 다양한 언어 지원 및 코드 자동완성 기능이 있는
+              </p>
+              <pre> Monaco-Editor를 추진 및 적용을 해 유저들에게 감동을 주기위해 세심한 부분까지 UX 고려했습니다.</pre>
+            </div>
+          </IntroduceContent>
+
           <h3><b>꼼꼼하게</b> 빈 틈을 채워나가는 <b> 개발자</b></h3>
 
           <IntroduceContent>
@@ -26,17 +37,6 @@ function Introduce() {
               <pre>협력과 지속적인 동기 부여를 통해 성장할 수 있었습니다.</pre>
             </div>
           </IntroduceContent>
-
-          <h3>사람들이 필요로 하는 것이 무엇인지 <b>고민하는 개발자</b></h3>
-
-          <IntroduceContent>
-            <div>
-              <p>
-                <Dot></Dot>항상 유저의 편의성을 생각하며 개발자 타겟으로 한 [모각코 ON:]서비스에 다양한 언어 지원 및 코드 자동완성 기능이 있는
-              </p>
-              <pre>Monaco-Editor 추진 및 적용을 했습니다.</pre>
-            </div>
-          </IntroduceContent>
         </IntroduceContentWrap>
       </IntroduceWrap>
       <Line></Line>
@@ -44,7 +44,7 @@ function Introduce() {
   )
 }
 
-const Dot = styled.div`
+const Dot = styled.span`
   width: 5px;
   height: 5px;
   background-color: rgb(252, 131, 108);
